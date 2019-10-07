@@ -4,17 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SupportedSensors">
 
-
-    <Button
-        android:id="@+id/btn_view_supported_sensors"
+    <TextView
+        android:id="@+id/supported_sensors_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:onClick="openSupportedSensors"
-        android:text="@string/view_supported_sensors"
+        android:text="Supported Sensors"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/supported_sensors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/supported_sensors_label"
+        app:layout_constraintTop_toBottomOf="@+id/supported_sensors_label" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

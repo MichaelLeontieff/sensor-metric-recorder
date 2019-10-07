@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Sensor Metric Recorder</string>
+    <string name="view_supported_sensors">View Supported Sensors</string>
 </resources>
